@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NIT KKR Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <style>
+    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+header {
+  background-color: #4a4545;
+  /* background-image: url("backg.jpg"); */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  color: #4CAF50;
+}
+
+/* Main content styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  /* background-image: url("back.jpg"); */
+}
+
+.hero {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #357a38;
+}
+
+.features {
+  margin-top: 4rem;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.features ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+
+.features li {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.features img {
+  width: 100%;
+  border-radius: 0.4rem;
+ 
+}
+
+.features h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.features p {
+  font-size: 0.9rem;
+}
+  
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+  </style>
+  <body >
+    <header>
+      <div  style="-webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);" class="logo">
+        <img src="https://4.bp.blogspot.com/-ZkR-75FUqHE/VtQKE8KNObI/AAAAAAAAaqo/xeauZDjVeSs/s1600/NIT%2BKurukshetra%2BAdmission.png" alt="NIT KKR">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="login.html">LogIn/SigUp</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="contactus.html" target="_blank">Contact</a></li>
+          <li><a href="test2.html" target="_blank">Collage Preview</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1 >Welcome to the NIT KKR Photo Gallery</h1>
+
+        <p >Explore the moments that made our college special.</p>
+        <a href="gallary.html" target="_blank" class="btn" style="-webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);">View Gallery</a>
+      </div>
+
+      <section class="features">
+        <h2  style="-webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);">Featured Albums</h2>
+        <ul>
+          <li>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.lShUNZEkqm7vq4dca1djNgHaFL&pid=Api&P=0&h=180" alt="Album 1">
+            <h3>Graduation </h3>
+            <p>Celebrating the achievements of our graduates.</p>
+          </li>
+          <li>
+            <img src="https://i.ytimg.com/vi/TzSiDpA7Pw4/maxresdefault.jpg" alt="Album 2">
+            <h3 >Citius </h3>
+            <p>Capturing the thrill of competition and teamwork.</p>
+          </li>
+          <li>
+            <img src="https://www.techyv.com/sites/default/2022/06/users/Proofreader7/Techspardha-NIT-Kurukshetra.jpg" alt="Album 3">
+            <h3>Techsparadha </h3>
+            <p>Displaying the vibrant diversity of our college community.</p>
+          </li>
+          <!-- <li>
+            <img src="https://www.techyv.com/sites/default/2022/06/users/Proofreader7/Techspardha-NIT-Kurukshetra.jpg" alt="Album 3">
+            <h3>Social fest</h3>
+            <p>Women day </p>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; NIT KKR Photo Gallery. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+
+
+

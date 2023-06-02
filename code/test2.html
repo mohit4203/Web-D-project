@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+       background-color: black;
+        overflow:hidden;
+      }
+      
+      ul {
+        width:70vmin;
+        height:70vmin;
+        position:relative;
+      }
+      
+      li { 
+     
+        --h: calc(100% / 3);
+        --w: calc(1.15470053838 * var(--h));
+        --a: calc(0.28867513459 * var(--h));
+        --d: calc(0.57735026919 * var(--h));
+        height:var(--h);
+        width:var(--w);
+        position:absolute;
+      }
+      
+      img {
+        display:block;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+     
+        --aw:24.99999999999%;
+        clip-path:polygon(
+          var(--aw) 0,
+          0 50%,
+          var(--aw) 100%,
+          calc(100% - var(--aw)) 100%,
+          100% 50%,
+          calc(100% - var(--aw)) 0
+        );
+      }
+      
+      li:nth-of-type(1) {
+        left:calc(50% - var(--a) - var(--d) * 0.5);
+        top:0;
+      }
+      li:nth-of-type(2) {
+        left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+        top:calc(var(--h) * 0.5);
+      }
+      li:nth-of-type(3) {
+        left:calc(50% - var(--a) * 2 - var(--d) * 1.5);
+        top:calc(var(--h) * 1.5);
+      }
+      li:nth-of-type(4) {
+        left:calc(50% - var(--a) - var(--d) * 0.5);
+        top:calc(var(--h) * 2);
+      }
+      li:nth-of-type(5) {
+        left:calc(50% + var(--d) * 0.5);
+        top:calc(var(--h) * 0.5);
+      }
+      li:nth-of-type(6) {
+        left:calc(50% + var(--d) * 0.5);
+        top:calc(var(--h) * 1.5);
+      }
+      
+      
+      
+    
+      
+      ul {
+        filter:drop-shadow(0 0 10px hsla(0,0%,0%,0.3));
+      }
+      
+      li:hover {
+        filter:drop-shadow(0 0 10px powderblue);
+        z-index:10;
+      }
+      
+      
+      ul {
+        animation:r 4s forwards;
+      } @keyframes r {
+        from {transform:rotate(180deg)}
+        to {transform:rotate(0)}
+      }
+      
+      li {
+        animation:ir 4s forwards;
+      } @keyframes ir {
+        from {transform:rotate(-360deg)}
+        to {transform:rotate(0)}
+      }
+</style>
+<body >
+  <fieldset>
+    <h2 style="color:aliceblue">Highlight of NIT KURUKSHETRA</h2>
+  </fieldset>
+  
+    <div>
+    <ul>
+        <li>
+            <a href="assets/bg1.jpg">
+            <img src=" assets/bg1.jpg" >
+          </a>
+        </li>
+        <li>
+            <a href="assets/bg2.jpg">
+            <img src="assets/bg2.jpg" >
+          </a>
+        </li>
+        <li>
+            <a href="assets/bg3.jpg">
+            <img src=" assets/bg3.jpg" >
+          </a>
+        </li>
+        <li>
+            <a href="assets/bg4.jpg">
+            <img src="assets/bg4.jpg" >
+          </a>
+        </li>
+        <li>
+            <a href="assets/bg5.jpg">
+            <img src=" assets/bg5.jpg" >
+          </a>
+        </li>
+        <li>
+            <a href=" assets/bg6.jpg">
+            <img src="  assets/bg6.jpg" >
+          </a>
+        </li>
+    </ul>
+</div>
+   
+
+</body>
+</html>l
